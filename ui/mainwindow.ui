@@ -1,0 +1,2527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1869</width>
+    <height>891</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1092</width>
+    <height>674</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>VSC-HVDC系统恶意数据攻击演示与分析软件</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../qrc/images.qrc">
+    <normaloff>:/新前缀/image/1.png</normaloff>:/新前缀/image/1.png</iconset>
+  </property>
+  <property name="toolTip">
+   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;文件&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+  </property>
+  <property name="whatsThis">
+   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;sdsadsa&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1869</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="whatsThis">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="accessibleName">
+    <string/>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_2">
+    <layout class="QGridLayout" name="gridLayout_13">
+     <item row="1" column="0">
+      <widget class="QGroupBox" name="groupBox_2">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="title">
+        <string>数据查看</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_8">
+        <item row="1" column="0">
+         <layout class="QGridLayout" name="gridLayout_7">
+          <item row="0" column="0">
+           <widget class="QFrame" name="frame">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_12">
+             <item row="0" column="3">
+              <widget class="QLineEdit" name="lineEdit_2">
+               <property name="inputMethodHints">
+                <set>Qt::ImhNone</set>
+               </property>
+               <property name="dragEnabled">
+                <bool>false</bool>
+               </property>
+               <property name="readOnly">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QLabel" name="label_2">
+               <property name="text">
+                <string>直流系统容量基准值</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>交流系统容量基准值</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="5">
+              <widget class="QComboBox" name="comboBox_1">
+               <item>
+                <property name="text">
+                 <string>单极</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>双极</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="0" column="4">
+              <widget class="QLabel" name="label_3">
+               <property name="text">
+                <string>直流网络极数</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="lineEdit_1"/>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="0">
+         <widget class="QTabWidget" name="tabWidget_11">
+          <property name="sizeIncrement">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="currentIndex">
+           <number>4</number>
+          </property>
+          <widget class="QWidget" name="tab">
+           <attribute name="title">
+            <string>VSC-HVDC系统</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_2">
+            <item row="0" column="0">
+             <widget class="QTableWidget" name="tableWidget_1">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>597</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="alternatingRowColors">
+               <bool>false</bool>
+              </property>
+              <property name="showGrid">
+               <bool>true</bool>
+              </property>
+              <column>
+               <property name="text">
+                <string>直流节点名称</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>交流节点名称</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>直流网络名称</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>直流有功功率 (MW)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>直流电压幅值 (p.u.)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>直流电压基准值 (Kv)</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>直流电压最大值 (p.u.)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>直流电压最小值 (p.u.)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>对地电容 (p.u.)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QTableWidget" name="tableWidget_2">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <column>
+               <property name="text">
+                <string>直流节点名称</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>直流控制类型</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>交流控制类型</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>注入交流系统有功功率 (MW)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>注入交流系统无功功率 (MVar)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>交流节点电压整定值 (p.u.)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>换流变压器电阻 (p.u.)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>换流变压器电抗 (p.u.)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>滤波器电纳 (p.u.)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>移相器电阻 (p.u.)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>移相器电抗 (p.u.)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>交流电压基准值 (Kv)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>交流电压最大值 (p.u.)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>交流电压最小值 (p.u.)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>交流电流最大值 (p.u.)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>停运状态</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>损耗系统A</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>损耗系统B</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>损耗系统C1</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>损耗系统C2</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>电压下垂控制系数 (MW/p.u.)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>电压下垂控制功率整定值 (MW)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>电压下垂控制电压整定值 (p.u.)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>电压下垂控制死区值 (p.u.)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>换流器交流侧电压幅值 (p.u.)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>换流器交流侧电压相角 (度)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>换流器产生的有功功率 (MW)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>换流器产生无无功功率 (MVar)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>换流器有功损耗 (MW)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>滤波器电压幅值 (p.u.)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>滤波器电压相角 (度)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>滤波器有功功率 (MW)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>换流变压器流向滤波器的无功功率 (MVar)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>移相器流向滤波器的无功功率 (MVar)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QTableWidget" name="tableWidget_3">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <column>
+               <property name="text">
+                <string>直流线路名称</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>首端直流节点</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>末端直流节点</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>直流线路电阻 (p.u.)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>直流线路电感 (p.u.)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>直流电路电容 (p.u.)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>长期最大容量 (MVA)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>短期最大容量 (MVA)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>紧急最大容量 (MVA)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>线路状态</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>线路首端注入功率 (MW)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>线路末端注入功率 (MW)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_2">
+           <attribute name="title">
+            <string>交流系统</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_4">
+            <item row="0" column="0">
+             <widget class="QTableWidget" name="tableWidget_4">
+              <column>
+               <property name="text">
+                <string>交流节点名称</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>节点类型</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>负荷有功功率 (MW)</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>负荷无功功率 (MVar)</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>对地电导 (p.u.)</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>对地电纳 (p.u.)</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>区域名</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>电压幅值 (p.u.)</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>电压相角 (度)</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>电压基准值 (Kv)</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>分区名</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>电压幅值上限 (p.u.)</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>电压幅值下限 (p.u.)</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QTableWidget" name="tableWidget_5">
+              <column>
+               <property name="text">
+                <string>发电机节点</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>发电机有功功率 (MW)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>发电机无功功率 (MVar)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>发电机无功上限 (MVar)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>发电机无功下限 (MVar)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>机端电压 (p.u.)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>功率基准值 (MW)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>停运状态</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>发电机有功上限 (MW)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>发电机有功下限 (MWar)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Pc1</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Pc2</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Qc1min</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Qc1max</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Qc2min</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Qc2max</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>ramp_agc</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>ramp_10</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>ramp_30</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>ramp_q</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>apf</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QTableWidget" name="tableWidget_6">
+              <column>
+               <property name="text">
+                <string>支路名称</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>首端节点</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>末端节点</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>支路电阻 (p.u.)</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>支路电抗 (p.u.)</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>对地电纳 (p.u.)</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>rateA</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>rateB</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>rateC</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>变压器变比</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>角度 (度)</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>停运状态</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>角度下限 (度)</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>角度上限 (度)</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>首端有功功率 (MV)</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>首端无功功率 (MVar)</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>末端有功功率 (MW)</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>末端无功功率 (MVar)</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_4">
+           <attribute name="title">
+            <string>量测配置数据</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_5">
+            <item row="1" column="0">
+             <widget class="QTableWidget" name="tableWidget_8">
+              <column>
+               <property name="text">
+                <string>支路首端节点</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>支路末端节点</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>支路首端有功潮流量测</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>量测误差的标准差</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>支路首端无功潮流量测</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>量测误差的标准差</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>支路末端有功潮流量测</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>量测误差的标准差</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>支路末端无功潮流量测</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>量测误差的标准差</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QTableWidget" name="tableWidget_7">
+              <column>
+               <property name="text">
+                <string>交流节点名称</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>电压幅值量测</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>量测误差的标准差</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>注入有功量测</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>量测误差的标准差</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>注入无功量测</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>量测误差的标准差</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QTableWidget" name="tableWidget_9">
+              <column>
+               <property name="text">
+                <string>直流节点名称</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>交流节点名称</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>注入有功潮流量测</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>量测误差的标准差</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>注入无功潮流量测</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>量测误差的标准差</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>换流器有功功率量测</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>量测误差的标准差</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>换流器无功功率量测</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>量测误差的标准差</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>换流器有功平衡量测</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>量测误差的标准差</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>直流电压量测</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>量测误差的标准差</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>直流电流量测</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>量测误差的标准差</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>调制比量测</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>量测误差的标准差</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>移相角量测</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>量测误差的标准差</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_3">
+           <attribute name="title">
+            <string>节点地理位置</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_6">
+            <item row="0" column="0">
+             <widget class="QTableWidget" name="tableWidget_10">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>392</height>
+               </size>
+              </property>
+              <column>
+               <property name="text">
+                <string>交流节点名称</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>经度</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>纬度</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QTableWidget" name="tableWidget_11">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <column>
+               <property name="text">
+                <string>直流节点名称</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>经度</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>纬度</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_5">
+           <attribute name="title">
+            <string>攻击前量测数据</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_16">
+            <item row="0" column="0">
+             <widget class="QTableWidget" name="tableWidget_12">
+              <column>
+               <property name="text">
+                <string>交流节点名称</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>电压幅值量测 (p.u.)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>注入有功量测 (p.u.)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>注入无功量测  (p.u.)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QTableWidget" name="tableWidget_13">
+              <column>
+               <property name="text">
+                <string>支路首端节点</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>支路末端节点</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>支路首端有功潮流量测 (p.u.)</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>支路首端无功潮流量测 (p.u.)</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>支路末端有功潮流量测 (p.u.)</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>支路末端无功潮流量测 (p.u.)</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QTableWidget" name="tableWidget_14">
+              <column>
+               <property name="text">
+                <string>直流节点名称</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>交流节点名称</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>注入有功潮流量测 (p.u.)</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>注入无功潮流量测 (p.u.)</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>换流器有功功率量测 (p.u.)</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>换流器无功功率量测 (p.u.)</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>换流器有功平衡量测 (p.u.)</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>直流电压量测 (p.u.)</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>直流电流量测 (p.u.)</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>调制比量测.)</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>移相角量测</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_6">
+           <attribute name="title">
+            <string>攻击后量测数据</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_19">
+            <item row="0" column="0">
+             <widget class="QTableWidget" name="tableWidget_15">
+              <column>
+               <property name="text">
+                <string>交流节点名称</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>电压幅值量测 (p.u.)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>注入有功量测 (p.u.)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>注入无功量测  (p.u.)</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignJustify|AlignVCenter</set>
+               </property>
+              </column>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QTableWidget" name="tableWidget_16">
+              <column>
+               <property name="text">
+                <string>支路首端节点</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>支路末端节点</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>支路首端有功潮流量测 (p.u.)</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>支路首端无功潮流量测 (p.u.)</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>支路末端有功潮流量测 (p.u.)</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>支路末端无功潮流量测 (p.u.)</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QTableWidget" name="tableWidget_17">
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="verticalScrollBarPolicy">
+               <enum>Qt::ScrollBarAsNeeded</enum>
+              </property>
+              <property name="dragEnabled">
+               <bool>false</bool>
+              </property>
+              <attribute name="horizontalHeaderCascadingSectionResizes">
+               <bool>false</bool>
+              </attribute>
+              <attribute name="horizontalHeaderDefaultSectionSize">
+               <number>100</number>
+              </attribute>
+              <attribute name="horizontalHeaderMinimumSectionSize">
+               <number>30</number>
+              </attribute>
+              <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+               <bool>true</bool>
+              </attribute>
+              <attribute name="horizontalHeaderStretchLastSection">
+               <bool>false</bool>
+              </attribute>
+              <column>
+               <property name="text">
+                <string>直流节点名称</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>交流节点名称</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>注入有功潮流量测 (p.u.)</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>注入无功潮流量测 (p.u.)</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>换流器有功功率量测 (p.u.)</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>换流器无功功率量测 (p.u.)</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>换流器有功平衡量测 (p.u.)</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>直流电压量测 (p.u.)</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>直流电流量测 (p.u.)</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>调制比量测.)</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>移相角量测</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_7">
+           <attribute name="title">
+            <string>批量分析结果</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_20">
+            <item row="0" column="0">
+             <widget class="QTableWidget" name="tableWidget_18">
+              <column>
+               <property name="text">
+                <string>试验次数</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>攻击前最大标准化残差</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>攻击后最大标准化残差</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>最大标准化残差变化</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QGroupBox" name="groupBox">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>700</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="title">
+        <string>系统数据导入</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLabel" name="label_4">
+            <property name="text">
+             <string>交流系统数据</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="editFileName_1">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Name of file to export. When exporting multiple pages to multiple files %PAGENUM% is the number of the page and %PAGENAME% is the name of the page.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="buttonBrowse_1">
+            <property name="text">
+             <string>浏览...</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_5">
+            <property name="text">
+             <string>VSC-HVDC系统数据</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="editFileName_2">
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Name of file to export. When exporting multiple pages to multiple files %PAGENUM% is the number of the page and %PAGENAME% is the name of the page.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="buttonBrowse_2">
+            <property name="text">
+             <string>浏览...</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QLabel" name="label_7">
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;量测配置数据&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="editFileName_3">
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Name of file to export. When exporting multiple pages to multiple files %PAGENUM% is the number of the page and %PAGENAME% is the name of the page.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="buttonBrowse_3">
+            <property name="text">
+             <string>浏览...</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_6">
+            <property name="text">
+             <string>节点地理位置数据</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="editFileName_4">
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Name of file to export. When exporting multiple pages to multiple files %PAGENUM% is the number of the page and %PAGENAME% is the name of the page.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="buttonBrowse_4">
+            <property name="text">
+             <string>浏览...</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget_2">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>1</width>
+     <height>1</height>
+    </size>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_5">
+    <layout class="QGridLayout" name="gridLayout_17">
+     <item row="2" column="0" colspan="6">
+      <layout class="QGridLayout" name="gridLayout_22">
+       <item row="1" column="1">
+        <widget class="QFrame" name="frame_5">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_14">
+          <property name="margin">
+           <number>0</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_11">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>FDI攻击后各量测量的标准化残差</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="MatplotlibWidget" name="matplotlibwidget_3" native="true">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <strikeout>false</strikeout>
+             </font>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::RightToLeft</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 0, 0, 255), stop:0.339795 rgba(255, 0, 0, 255), stop:0.339799 rgba(255, 255, 255, 255), stop:0.662444 rgba(255, 255, 255, 255), stop:0.662469 rgba(0, 0, 255, 255), stop:1 rgba(0, 0, 255, 255));
+background-color: rgb(255, 255, 255);</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QFrame" name="frame_4">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_11">
+          <property name="margin">
+           <number>0</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_10">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>FDI攻击前换流器的P-Q运行极限及运行点</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="MatplotlibWidget" name="matplotlibwidget_4" native="true">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Ignored" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>290</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <strikeout>false</strikeout>
+             </font>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::RightToLeft</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 0, 0, 255), stop:0.339795 rgba(255, 0, 0, 255), stop:0.339799 rgba(255, 255, 255, 255), stop:0.662444 rgba(255, 255, 255, 255), stop:0.662469 rgba(0, 0, 255, 255), stop:1 rgba(0, 0, 255, 255));
+background-color: rgb(255, 255, 255);</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLabel" name="label_15">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>FDI攻击后换流器的P-Q运行极限及运行点</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="MatplotlibWidget" name="matplotlibwidget_5" native="true">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Ignored" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>290</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <strikeout>false</strikeout>
+             </font>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::RightToLeft</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 0, 0, 255), stop:0.339795 rgba(255, 0, 0, 255), stop:0.339799 rgba(255, 255, 255, 255), stop:0.662444 rgba(255, 255, 255, 255), stop:0.662469 rgba(0, 0, 255, 255), stop:1 rgba(0, 0, 255, 255));
+background-color: rgb(255, 255, 255);</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QFrame" name="frame_3">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_10">
+          <property name="margin">
+           <number>0</number>
+          </property>
+          <item row="1" column="0">
+           <widget class="MatplotlibWidget" name="matplotlibwidget_2" native="true">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <strikeout>false</strikeout>
+             </font>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::RightToLeft</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 0, 0, 255), stop:0.339795 rgba(255, 0, 0, 255), stop:0.339799 rgba(255, 255, 255, 255), stop:0.662444 rgba(255, 255, 255, 255), stop:0.662469 rgba(0, 0, 255, 255), stop:1 rgba(0, 0, 255, 255));
+background-color: rgb(255, 255, 255);</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_9">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>FDI攻击前各量测量的标准化残差</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="0" rowspan="2">
+        <widget class="QFrame" name="frame_2">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <property name="margin">
+           <number>0</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_8">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::RightToLeft</enum>
+            </property>
+            <property name="text">
+             <string>系统单线图</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="margin">
+             <number>0</number>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="MatplotlibWidget" name="matplotlibwidget_1" native="true">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Ignored" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>10</width>
+              <height>6</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <strikeout>false</strikeout>
+             </font>
+            </property>
+            <property name="mouseTracking">
+             <bool>false</bool>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="acceptDrops">
+             <bool>false</bool>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::RightToLeft</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 0, 0, 255), stop:0.339795 rgba(255, 0, 0, 255), stop:0.339799 rgba(255, 255, 255, 255), stop:0.662444 rgba(255, 255, 255, 255), stop:0.662469 rgba(0, 0, 255, 255), stop:1 rgba(0, 0, 255, 255));
+background-color: rgb(255, 255, 255);</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QFrame" name="frame_6">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_15">
+          <property name="margin">
+           <number>0</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_12">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>批量分析中最大标准化残差变化情况</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="MatplotlibWidget" name="matplotlibwidget_6" native="true">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <strikeout>false</strikeout>
+             </font>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::RightToLeft</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 0, 0, 255), stop:0.339795 rgba(255, 0, 0, 255), stop:0.339799 rgba(255, 255, 255, 255), stop:0.662444 rgba(255, 255, 255, 255), stop:0.662469 rgba(0, 0, 255, 255), stop:1 rgba(0, 0, 255, 255));
+background-color: rgb(255, 255, 255);</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="0" column="2">
+      <layout class="QGridLayout" name="gridLayout_18">
+       <property name="sizeConstraint">
+        <enum>QLayout::SetDefaultConstraint</enum>
+       </property>
+       <item row="3" column="5">
+        <widget class="QPushButton" name="pushButton_9">
+         <property name="text">
+          <string>残差分析</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="4" rowspan="2">
+        <widget class="QPushButton" name="pushButton_7">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>46</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 8pt &quot;微软雅黑&quot;;
+background-image: url(:/新前缀/image/1.png);
+font: 75 9pt &quot;Aharoni&quot;;
+color: rgb(255, 0, 0);</string>
+         </property>
+         <property name="text">
+          <string>实施FDI攻击</string>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="6">
+        <widget class="QPushButton" name="pushButton_11">
+         <property name="text">
+          <string>批量分析</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_14">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>攻击换流器</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="5">
+        <widget class="QPushButton" name="pushButton_8">
+         <property name="text">
+          <string>状态估计</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="6">
+        <widget class="QPushButton" name="pushButton_10">
+         <property name="text">
+          <string>P-Q运行图</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="3">
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>60</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>60</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="decimals">
+          <number>2</number>
+         </property>
+         <property name="maximum">
+          <double>1.500000000000000</double>
+         </property>
+         <property name="singleStep">
+          <double>0.010000000000000</double>
+         </property>
+         <property name="value">
+          <double>1.000000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QLabel" name="label_17">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>60</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>60</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>攻击参数r1</string>
+         </property>
+         <property name="textFormat">
+          <enum>Qt::AutoText</enum>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QLabel" name="label_13">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>攻击参数r2</string>
+         </property>
+         <property name="textFormat">
+          <enum>Qt::AutoText</enum>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QComboBox" name="comboBox_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>60</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>60</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <item>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>2</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_16">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>60</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>60</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>批量次数</string>
+         </property>
+         <property name="textFormat">
+          <enum>Qt::AutoText</enum>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_1">
+         <property name="minimumSize">
+          <size>
+           <width>60</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>60</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="decimals">
+          <number>2</number>
+         </property>
+         <property name="maximum">
+          <double>1.500000000000000</double>
+         </property>
+         <property name="singleStep">
+          <double>0.010000000000000</double>
+         </property>
+         <property name="value">
+          <double>1.000000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_3">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>60</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>60</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="decimals">
+          <number>0</number>
+         </property>
+         <property name="maximum">
+          <double>1000.000000000000000</double>
+         </property>
+         <property name="singleStep">
+          <double>1.000000000000000</double>
+         </property>
+         <property name="value">
+          <double>100.000000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="7" rowspan="2">
+        <widget class="QProgressBar" name="progressBar_1">
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="value">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="0" column="1">
+      <widget class="Line" name="line_2">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" colspan="6">
+      <widget class="Line" name="line">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <layout class="QGridLayout" name="gridLayout_9">
+       <property name="sizeConstraint">
+        <enum>QLayout::SetDefaultConstraint</enum>
+       </property>
+       <item row="2" column="2">
+        <widget class="QPushButton" name="pushButton_6">
+         <property name="text">
+          <string>P-Q运行图</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QPushButton" name="pushButton_4">
+         <property name="text">
+          <string>状态估计</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QPushButton" name="pushButton_1">
+         <property name="text">
+          <string>导入数据</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="pushButton_3">
+         <property name="text">
+          <string>生成量测数据</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="text">
+          <string>绘制单线图</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QPushButton" name="pushButton_5">
+         <property name="text">
+          <string>残差分析</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="0" column="4">
+      <widget class="QPushButton" name="pushButton_12">
+       <property name="text">
+        <string>退出</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MatplotlibWidget</class>
+   <extends>QWidget</extends>
+   <header>matplotlibwidget</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>editFileName_1</tabstop>
+  <tabstop>buttonBrowse_1</tabstop>
+  <tabstop>editFileName_3</tabstop>
+  <tabstop>buttonBrowse_3</tabstop>
+  <tabstop>tabWidget_11</tabstop>
+  <tabstop>tableWidget_1</tabstop>
+  <tabstop>tableWidget_2</tabstop>
+  <tabstop>tableWidget_3</tabstop>
+  <tabstop>tableWidget_4</tabstop>
+  <tabstop>tableWidget_7</tabstop>
+  <tabstop>tableWidget_10</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../qrc/images.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton_12</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1800</x>
+     <y>74</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>787</x>
+     <y>125</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
